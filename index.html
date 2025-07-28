@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Saroj Kunwar | Fun Personal Site</title>
+  <meta charset="UTF-8" />
+  <title>Saroj Kunwar | Official Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
@@ -104,10 +104,12 @@
       font-size: 16px;
     }
 
-    audio {
+    audio, video, iframe {
       margin-top: 20px;
       width: 90%;
-      max-width: 500px;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
 
     @media (max-width: 600px) {
@@ -163,12 +165,24 @@
   </section>
 
   <section>
-    <h2>Now Playing 🎶</h2>
+    <h2>🎶 Now Playing</h2>
     <audio controls autoplay loop>
-      <source src="https://dl.dropboxusercontent.com/scl/fi/30gbomzdu7ukz1kmtl5kb/Nepali-Song.mp3?rlkey=6hnx4uv0xqp9vv8zbs7d76agv&dl=0" type="audio/mpeg">
-      Your browser does not support audio.
+      <source src="https://dl.dropboxusercontent.com/scl/fi/f8mm27r2i7i7gl3evh0eg/Saathi-Yama-Buddha.mp3?rlkey=0oz06nljup3kz9f0ctryq59iy&dl=0" type="audio/mp3">
+      Your browser does not support audio playback 😢
     </audio>
-    <div class="song-info">Nepali Vibes ✨</div>
+    <div class="song-info">🎤 Yama Buddha – Saathi</div>
+  </section>
+
+  <section>
+    <h2>🎥 Featured Video</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+    <div class="song-info">🔥 Cool YouTube Video</div>
   </section>
 
   <footer>
