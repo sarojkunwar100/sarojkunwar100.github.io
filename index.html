@@ -8,30 +8,30 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #ffe0e0, #e0f7fa);
       text-align: center;
-      padding: 60px;
+      padding: 50px 30px;
       color: #333;
     }
 
     h1 {
-      font-size: 56px;
+      font-size: 50px;
       color: #d81b60;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 28px;
-      margin: 12px 0;
-      line-height: 1.4;
+      font-size: 22px;
+      margin: 8px 0;
     }
 
     .profile-pic {
-      width: 280px;
-      height: 280px;
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
-      border: 7px solid #ff4081;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-      margin-top: 30px;
+      border: 6px solid #ff4081;
+      box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+      margin: 20px auto;
       object-fit: cover;
+      display: block;
     }
 
     .social-links {
@@ -40,12 +40,12 @@
 
     .social-links a {
       display: inline-block;
-      margin: 12px;
+      margin: 10px 15px;
       padding: 14px 28px;
       text-decoration: none;
       color: white;
       border-radius: 35px;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 20px;
       transition: 0.3s;
     }
@@ -60,19 +60,30 @@
     }
 
     .section {
-      margin-top: 60px;
+      margin-top: 55px;
     }
 
     .section h2 {
       color: #880e4f;
-      font-size: 36px;
-      margin-bottom: 16px;
+      font-size: 38px;
+      margin-bottom: 18px;
+      border-bottom: 3px solid #d81b60;
+      display: inline-block;
+      padding-bottom: 5px;
     }
 
-    .footer {
-      margin-top: 70px;
-      font-size: 18px;
+    ul.friends-list {
+      list-style-type: disc;
+      font-size: 24px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-left: 20px;
+      text-align: left;
       color: #555;
+    }
+
+    ul.friends-list li {
+      margin-bottom: 12px;
     }
 
     .funny {
@@ -80,16 +91,40 @@
       margin-top: 50px;
       padding: 25px;
       border-radius: 12px;
-      font-size: 24px;
+      font-size: 22px;
       color: #d84315;
       box-shadow: 0 5px 10px rgba(0,0,0,0.25);
-      line-height: 1.5;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     audio {
-      margin-top: 40px;
-      width: 80%;
+      margin-top: 35px;
+      width: 85%;
       max-width: 700px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .song-info {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #a62162;
+      font-weight: 600;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 18px;
+      color: #555;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -109,12 +144,18 @@
 
   <div class="section">
     <h2>My Best Friends</h2>
-    <p>They are always with me, making every moment special 😊</p>
+    <ul class="friends-list">
+      <li>Saroj Dhungel</li>
+      <li>Himal Bhatt</li>
+      <li>Biswash Chaudhary</li>
+    </ul>
   </div>
 
   <div class="section">
     <h2>My Love ❤️</h2>
-    <p>This person makes my heart smile 💖</p>
+    <ul class="friends-list">
+      <li>Puspa Bist</li>
+    </ul>
   </div>
 
   <div class="section">
@@ -136,10 +177,13 @@
     <source src="https://dl.dropboxusercontent.com/scl/fi/30gbomzdu7ukz1kmtl5kb/Nepali-Song.mp3?rlkey=6hnx4uv0xqp9vv8zbs7d76agv&dl=0" type="audio/mpeg" />
     Your browser does not support audio playback 😢
   </audio>
+  <div class="song-info">
+    Now Playing: Nepali Song 🎵
+  </div>
 
   <div class="footer">
     &copy; 2025 Saroj Kunwar. All rights reserved.
   </div>
 
 </body>
-                                                          </html>
+</html>
