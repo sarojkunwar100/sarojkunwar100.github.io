@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Funny Saroj Kunwar 😆</title>
+  <title>Saroj's Funny World ⏰😆</title>
   <style>
     body {
       background-color: #ffeaa7;
@@ -42,7 +42,7 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     }
 
-    button {
+    button, .social-btn {
       padding: 10px 25px;
       background-color: #00b894;
       color: white;
@@ -51,10 +51,34 @@
       border-radius: 8px;
       cursor: pointer;
       transition: 0.3s;
+      margin: 10px;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    button:hover {
+    button:hover, .social-btn:hover {
       background-color: #019875;
+    }
+
+    .social-container {
+      margin-top: 30px;
+    }
+
+    .time-box {
+      background-color: #dfe6e9;
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+      margin: 30px auto;
+      color: #2d3436;
+      font-size: 1.1em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .time-title {
+      font-weight: bold;
+      color: #6c5ce7;
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -70,19 +94,50 @@
   <br>
   <button onclick="tellJoke()">Tell me a joke!</button>
 
+  <div class="social-container">
+    <a class="social-btn" href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yOwIuTAUN8&_r=1" target="_blank">🎵 My TikTok</a>
+    <a class="social-btn" href="https://www.facebook.com/share/16fX2F778y/" target="_blank">📘 My Facebook</a>
+  </div>
+
+  <div class="time-box">
+    <div class="time-title">🕒 Nepali Time (Kathmandu)</div>
+    <div id="nepali-time">Loading...</div>
+    <div class="time-title" style="margin-top: 15px;">🕒 English Time (Dubai)</div>
+    <div id="dubai-time">Loading...</div>
+  </div>
+
   <script>
     const jokes = [
-      "Ekdin Goru school gayo... Miss le bhanin: 'Why are you here?' Goru le bhancha: 'Mero naam syllabus ma chha ni - domestic animals!' 😂",
-      "Teacher: 'Saroj, define laziness.' Saroj: 'Laziness ho sir, aba yo line pani copy garnu mann lagdaina!' 🤣",
-      "Ekdin buff le mobile kinyo... sabai herna thalyo. Goru le sodhyo: 'K kinna mobile?' Buff: 'Ho ni bro, tiktok banaune!' 😆",
-      "Doctor: K din dekhi bimaar ho? Patient: Yo k bhanya? Ma ta yo kura ta tiktok ma herera aako! 🤪",
-      "Miss: Why late? Saroj: Miss, dream ma class aayeko thiyen. Miss: Ani? Saroj: Alarm le disturb garihalcha ni! 😂"
+      "Miss: Saroj, why are you late? Saroj: Miss, I was early, but then I waited for the bell to ring. 😂",
+      "Goru: Timi doctor ho? Doctor: Ho. Goru: Ta mobile ma YouTube herirathis ta! 😆",
+      "Dad: Why are your exam marks low? Saroj: Because I sit beside a lazy friend and I don’t want to disturb him. 🤣",
+      "Buff: Ma ta smart xu. Goru: Kasto? Buff: Ma ta iPhone sanga selfie khichxu. 📱🐃",
+      "Sir: Homework? Student: Sir, online padhera download garna birse! 🤪",
+      "Friend: Tero brain kaha ho? Saroj: Online ma... search garirako xu! 🧠😂",
+      "Miss: Why didn’t you come yesterday? Student: I was abducted by aliens for science! 👽🤓"
     ];
 
     function tellJoke() {
       const joke = jokes[Math.floor(Math.random() * jokes.length)];
       document.getElementById("joke").innerText = joke;
     }
+
+    function updateTime() {
+      const now = new Date();
+
+      // Nepali Time (GMT+5:45)
+      const nepaliOffset = 5 * 60 + 45;
+      const nepali = new Date(now.getTime() + (nepaliOffset - now.getTimezoneOffset()) * 60000);
+      document.getElementById("nepali-time").innerText = nepali.toLocaleTimeString();
+
+      // Dubai Time (GMT+4:00)
+      const dubaiOffset = 4 * 60;
+      const dubai = new Date(now.getTime() + (dubaiOffset - now.getTimezoneOffset()) * 60000);
+      document.getElementById("dubai-time").innerText = dubai.toLocaleTimeString();
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
   </script>
 </body>
 </html>
