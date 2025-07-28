@@ -2,94 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Funny Zone 😜</title>
+  <title>Funny Saroj Kunwar 😆</title>
   <style>
     body {
-      background-color: #fef08a;
+      background-color: #ffeaa7;
       font-family: 'Comic Sans MS', cursive;
       text-align: center;
-      padding: 50px;
-      animation: bgchange 5s infinite alternate;
+      padding: 40px;
     }
 
     h1 {
       font-size: 3em;
-      color: #ff0080;
-      animation: bounce 1s infinite;
+      color: #d63031;
     }
 
-    .emoji {
-      font-size: 4em;
-      animation: spin 4s linear infinite;
-      margin: 20px;
+    p {
+      font-size: 1.2em;
+      color: #2d3436;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #d63031;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .joke-box {
-      background-color: #fff;
-      border-radius: 20px;
+      background-color: #fdcb6e;
+      border-radius: 15px;
       padding: 20px;
-      margin-top: 40px;
-      box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+      font-size: 1.1em;
+      margin: 30px auto;
+      width: 80%;
+      max-width: 500px;
+      color: #2d3436;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     }
 
     button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #ff69b4;
+      padding: 10px 25px;
+      background-color: #00b894;
       color: white;
-      font-size: 1.2em;
-      border-radius: 10px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
       transition: 0.3s;
     }
 
     button:hover {
-      background-color: #d61b8f;
-    }
-
-    .info {
-      font-size: 1.2em;
-      margin-top: -20px;
-      color: #3f3f3f;
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-15px);
-      }
-    }
-
-    @keyframes spin {
-      0% {transform: rotate(0deg);}
-      100% {transform: rotate(360deg);}
-    }
-
-    @keyframes bgchange {
-      0% {background-color: #fef08a;}
-      100% {background-color: #ffedd5;}
+      background-color: #019875;
     }
   </style>
 </head>
 <body>
-  <h1>😂 Welcome to the Funny Zone! 😂</h1>
-  <div class="info">Created by: <strong>Saroj Kunwar</strong> | Class: <strong>10</strong></div>
-  <div class="emoji">🤪</div>
+  <h1>Welcome to My Website</h1>
+  <p>My name is <strong>Saroj Kunwar</strong>.</p>
+  <p>I am passionate about creativity and learning new things.</p>
+  <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar">
+
   <div class="joke-box" id="joke">
-    Click the button to get a funny joke! 😆
+    😂 Click below to hear a funny Nepali joke!
   </div>
-  <br><br>
-  <button onclick="tellJoke()">Tell Me a Joke!</button>
+  <br>
+  <button onclick="tellJoke()">Tell me a joke!</button>
 
   <script>
     const jokes = [
-      "Why don't eggs tell jokes? Because they'd crack each other up!",
-      "What did the fish say when it hit the wall? Dam!",
-      "Why don’t skeletons fight each other? They don’t have the guts.",
-      "What do you call cheese that isn't yours? Nacho cheese!",
-      "Why did the math book look sad? Because it had too many problems."
+      "Ekdin Goru school gayo... Miss le bhanin: 'Why are you here?' Goru le bhancha: 'Mero naam syllabus ma chha ni - domestic animals!' 😂",
+      "Teacher: 'Saroj, define laziness.' Saroj: 'Laziness ho sir, aba yo line pani copy garnu mann lagdaina!' 🤣",
+      "Ekdin buff le mobile kinyo... sabai herna thalyo. Goru le sodhyo: 'K kinna mobile?' Buff: 'Ho ni bro, tiktok banaune!' 😆",
+      "Doctor: K din dekhi bimaar ho? Patient: Yo k bhanya? Ma ta yo kura ta tiktok ma herera aako! 🤪",
+      "Miss: Why late? Saroj: Miss, dream ma class aayeko thiyen. Miss: Ani? Saroj: Alarm le disturb garihalcha ni! 😂"
     ];
 
     function tellJoke() {
