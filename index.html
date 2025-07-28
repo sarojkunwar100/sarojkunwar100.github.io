@@ -2,56 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Saroj Kunwar Simple Site</title>
+  <title>Saroj Kunwar Simple Big Site</title>
   <style>
     body {
       background-color: #fff;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 20px;
+      padding: 40px;
       color: #333;
       margin: 0;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 3.5em;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.1em;
-      margin: 6px 0 15px 0;
+      font-size: 1.8em;
+      margin: 10px 0 25px 0;
     }
 
     img {
-      width: 180px;
-      height: 180px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 20px;
-      border: 2px solid #ddd;
+      margin-bottom: 30px;
+      border: 4px solid #ddd;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
     }
 
     .joke-box {
       background-color: #f9f9f9;
-      border-radius: 8px;
-      padding: 15px 20px;
-      font-size: 1em;
-      margin: 20px auto;
-      max-width: 400px;
-      color: #555;
-      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      padding: 25px 30px;
+      font-size: 1.5em;
+      margin: 30px auto;
+      max-width: 600px;
+      color: #444;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
     }
 
     button, .social-btn {
-      padding: 8px 20px;
+      padding: 14px 36px;
       background-color: #008080;
       color: white;
-      font-size: 1em;
+      font-size: 1.4em;
       border: none;
-      border-radius: 6px;
+      border-radius: 10px;
       cursor: pointer;
-      margin: 10px 6px;
+      margin: 15px 10px;
       text-decoration: none;
       display: inline-block;
       transition: background-color 0.3s;
@@ -63,47 +64,47 @@
 
     .time-box {
       background-color: #f0f0f0;
-      border-radius: 8px;
-      padding: 12px 15px;
-      width: 280px;
-      margin: 30px auto;
-      font-size: 1em;
+      border-radius: 10px;
+      padding: 20px 25px;
+      width: 400px;
+      margin: 40px auto;
+      font-size: 1.4em;
       color: #444;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      box-shadow: 0 0 12px rgba(0,0,0,0.07);
     }
 
     .time-title {
       font-weight: bold;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
       color: #006666;
     }
 
     .friends, .gf {
-      font-size: 1em;
-      margin-top: 15px;
+      font-size: 1.5em;
+      margin-top: 30px;
       color: #333;
     }
 
     .friends span {
       display: inline-block;
       background: #e0f7f7;
-      margin: 4px 8px;
-      padding: 6px 12px;
-      border-radius: 8px;
+      margin: 8px 12px;
+      padding: 10px 20px;
+      border-radius: 10px;
     }
 
     .gf {
       background-color: #f7dede;
       display: inline-block;
-      padding: 10px 18px;
-      border-radius: 10px;
-      margin-top: 20px;
-      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 14px;
+      margin-top: 30px;
+      font-weight: bold;
       color: #a94442;
     }
 
     .social-section {
-      margin-top: 25px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -117,7 +118,7 @@
   </div>
   <button onclick="tellJoke()">Tell me a joke</button>
 
-  <h2>⏰ Time Zone</h2>
+  <h2 style="font-size:2.3em;margin-top:40px;">⏰ Time Zone</h2>
   <div class="time-box">
     <div class="time-title">Nepali Time (Kathmandu)</div>
     <div id="nepali-time">Loading...</div>
@@ -125,7 +126,7 @@
     <div id="dubai-time">Loading...</div>
   </div>
 
-  <h2>🔗 My Social Links</h2>
+  <h2 style="font-size:2.3em;">🔗 My Social Links</h2>
   <div class="social-section">
     <a class="social-btn" href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yOyIZpOI54&_r=1" target="_blank">TikTok</a>
     <a class="social-btn" href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">Instagram</a>
@@ -133,9 +134,9 @@
     <a class="social-btn" href="https://www.facebook.com/share/15yWKm8DbU/" target="_blank">Facebook 2</a>
   </div>
 
-  <div class="gf">My Girlfriend: Luri Don</div>
+  <div class="gf">💖 My Girlfriend: Luri Don</div>
 
-  <h2>My Best Friends</h2>
+  <h2 style="font-size:2.2em;">👬 My Best Friends</h2>
   <div class="friends">
     <span>Saroj Dhungel</span>
     <span>Himal Bhatt</span>
@@ -160,7 +161,6 @@
 
     function updateTime() {
       const now = new Date();
-
       const nepaliOffset = 5 * 60 + 45;
       const nepali = new Date(now.getTime() + (nepaliOffset - now.getTimezoneOffset()) * 60000);
       document.getElementById("nepali-time").innerText = nepali.toLocaleTimeString();
