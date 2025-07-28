@@ -1,189 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Saroj Kunwar's Fun Website ❤️</title>
+  <meta charset="UTF-8">
+  <title>Saroj Kunwar | Fun Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffe0e0, #e0f7fa);
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 50px 30px;
       color: #333;
+    }
+
+    header {
+      padding: 60px 20px 20px;
     }
 
     h1 {
       font-size: 50px;
-      color: #d81b60;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      color: #c2185b;
     }
 
     p {
       font-size: 22px;
-      margin: 8px 0;
+      margin: 8px;
     }
 
-    .profile-pic {
-      width: 250px;
-      height: 250px;
+    img.profile {
+      width: 260px;
+      height: 260px;
       border-radius: 50%;
-      border: 6px solid #ff4081;
-      box-shadow: 0 7px 20px rgba(0,0,0,0.3);
-      margin: 20px auto;
+      border: 6px solid #fff;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
       object-fit: cover;
-      display: block;
+      margin-top: 25px;
     }
 
-    .social-links {
-      margin-top: 40px;
+    .social {
+      margin-top: 30px;
     }
 
-    .social-links a {
+    .social a {
       display: inline-block;
       margin: 10px 15px;
-      padding: 14px 28px;
+      padding: 12px 24px;
+      background: #333;
+      color: #fff;
+      border-radius: 30px;
+      font-size: 18px;
       text-decoration: none;
-      color: white;
-      border-radius: 35px;
-      font-weight: 700;
-      font-size: 20px;
       transition: 0.3s;
     }
 
-    .fb { background-color: #3b5998; }
-    .tiktok { background-color: #000; }
-    .insta { background-color: #e4405f; }
-
-    .social-links a:hover {
-      transform: scale(1.1);
-      opacity: 0.9;
+    .social a:hover {
+      background: #555;
     }
 
-    .section {
-      margin-top: 55px;
+    section {
+      padding: 40px 20px;
     }
 
-    .section h2 {
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
       color: #880e4f;
-      font-size: 38px;
-      margin-bottom: 18px;
-      border-bottom: 3px solid #d81b60;
+      border-bottom: 2px dashed #c2185b;
       display: inline-block;
       padding-bottom: 5px;
     }
 
-    ul.friends-list {
-      list-style-type: disc;
-      font-size: 24px;
-      max-width: 400px;
-      margin: 0 auto;
-      padding-left: 20px;
-      text-align: left;
-      color: #555;
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 22px;
     }
 
-    ul.friends-list li {
-      margin-bottom: 12px;
+    ul li {
+      margin: 10px 0;
     }
 
     .funny {
-      background-color: #fff3e0;
-      margin-top: 50px;
-      padding: 25px;
-      border-radius: 12px;
-      font-size: 22px;
-      color: #d84315;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.25);
-      line-height: 1.6;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    audio {
-      margin-top: 35px;
-      width: 85%;
-      max-width: 700px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      background: #fff8e1;
+      margin: 30px auto;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      max-width: 700px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
     .song-info {
-      margin-top: 15px;
       font-size: 20px;
-      color: #a62162;
-      font-weight: 600;
-      text-align: center;
+      color: #6a1b9a;
       font-style: italic;
+      margin-top: 15px;
     }
 
-    .footer {
-      margin-top: 60px;
-      font-size: 18px;
-      color: #555;
-      font-weight: 500;
+    footer {
+      background: #fce4ec;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      h2 { font-size: 28px; }
+      p, ul { font-size: 18px; }
+      img.profile { width: 180px; height: 180px; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My Funny Website 🎉</h1>
-  <p>I'm <strong>Saroj Kunwar</strong> 😎</p>
-  <p>I love editing photos, building websites, and having fun!</p>
-  <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" class="profile-pic" />
+  <header>
+    <h1>Welcome to My Website 😎</h1>
+    <p>I’m <strong>Saroj Kunwar</strong></p>
+    <p>Creative, funny, and full of vibes!</p>
+    <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" class="profile">
+  </header>
 
-  <div class="social-links">
-    <a href="https://www.facebook.com/share/16uRPLiF5S/" class="fb" target="_blank">Facebook 1</a>
-    <a href="https://www.facebook.com/share/19MYtEe9Lg/" class="fb" target="_blank">Facebook 2</a>
-    <a href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" class="insta" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yP35ceIT2o&_r=1" class="tiktok" target="_blank">TikTok</a>
+  <div class="social">
+    <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">Facebook 1</a>
+    <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">Facebook 2</a>
+    <a href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yP35ceIT2o&_r=1" target="_blank">TikTok</a>
   </div>
 
-  <div class="section">
+  <section>
     <h2>My Best Friends</h2>
-    <ul class="friends-list">
+    <ul>
       <li>Saroj Dhungel</li>
       <li>Himal Bhatt</li>
       <li>Biswash Chaudhary</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>My Love ❤️</h2>
-    <ul class="friends-list">
+    <ul>
       <li>Puspa Bist</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>My Hobbies</h2>
-    <p>🎨 Photo editing, 💻 web designing, 🎮 gaming, and spreading happiness!</p>
-  </div>
+  <section>
+    <h2>Funny Talk 😆</h2>
+    <div class="funny">
+      Girl: What are you doing?<br>
+      Me: Thinking about you... ChatGPT does the rest 😎<br><br>
+      Teacher: Why are you late?<br>
+      Me: Because the road was long... in my dream 😴<br><br>
+      Interviewer: Why do you always say "Yes"?<br>
+      Me: Because even Nepali starts with "Yes" 😂
+    </div>
+  </section>
 
-  <div class="funny">
-    <strong>🤣 Funny Conversation:</strong><br /><br />
-    Girl: What are you doing?<br />
-    Me: Thinking about you... ChatGPT handles the rest 😎<br /><br />
-    Teacher: Why are you late?<br />
-    Student: The road was long... in my dream 😴<br /><br />
-    Interviewer: Why do you say "Yes" to everything?<br />
-    Me: Because even "Nepali" starts with Yes 😂
-  </div>
+  <section>
+    <h2>Now Playing 🎶</h2>
+    <audio controls autoplay loop>
+      <source src="https://dl.dropboxusercontent.com/scl/fi/30gbomzdu7ukz1kmtl5kb/Nepali-Song.mp3?rlkey=6hnx4uv0xqp9vv8zbs7d76agv&dl=0" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+    <div class="song-info">Nepali Vibes ✨</div>
+  </section>
 
-  <audio controls autoplay loop>
-    <source src="https://dl.dropboxusercontent.com/scl/fi/30gbomzdu7ukz1kmtl5kb/Nepali-Song.mp3?rlkey=6hnx4uv0xqp9vv8zbs7d76agv&dl=0" type="audio/mpeg" />
-    Your browser does not support audio playback 😢
-  </audio>
-  <div class="song-info">
-    Now Playing: Nepali Song 🎵
-  </div>
-
-  <div class="footer">
-    &copy; 2025 Saroj Kunwar. All rights reserved.
-  </div>
+  <footer>
+    &copy; 2025 Saroj Kunwar. Made with ❤️ in Nepal.
+  </footer>
 
 </body>
 </html>
