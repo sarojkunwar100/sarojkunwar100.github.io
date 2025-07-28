@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Saroj Kunwar | Official Website</title>
@@ -7,152 +6,172 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      background: linear-gradient(135deg, #ffe0ec, #e0f7fa);
       margin: 0;
       padding: 0;
       text-align: center;
       color: #333;
-    }
+    }header {
+  padding: 60px 20px 20px;
+}
 
-    header {
-      padding: 60px 20px 20px;
-    }
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #ad1457;
+}
 
-    h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-      color: #c2185b;
-    }
+p {
+  font-size: 22px;
+  margin: 8px;
+}
 
-    p {
-      font-size: 22px;
-      margin: 8px;
-    }
+img.profile {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  object-fit: cover;
+  margin-top: 25px;
+}
 
-    img.profile {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-      object-fit: cover;
-      margin-top: 25px;
-    }
+.social {
+  margin-top: 30px;
+}
 
-    .social {
-      margin-top: 30px;
-    }
+.social a {
+  display: inline-block;
+  margin: 10px 12px;
+  padding: 12px 20px;
+  background: #7b1fa2;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
-    .social a {
-      display: inline-block;
-      margin: 10px 15px;
-      padding: 12px 24px;
-      background: #333;
-      color: #fff;
-      border-radius: 30px;
-      font-size: 18px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+.social a:hover {
+  background: #9c27b0;
+}
 
-    .social a:hover {
-      background: #555;
-    }
+section {
+  padding: 40px 20px;
+}
 
-    section {
-      padding: 40px 20px;
-    }
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+  border-bottom: 2px dashed #ba68c8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
 
-    h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #880e4f;
-      border-bottom: 2px dashed #c2185b;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 24px;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 22px;
-    }
+ul li {
+  margin: 10px 0;
+}
 
-    ul li {
-      margin: 10px 0;
-    }
+.love-section li {
+  color: #d81b60;
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ffdde1, #ffc0cb);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  box-shadow: 0 5px 20px rgba(255,0,102,0.5);
+  animation: pulse 2s infinite;
+}
 
-    .funny {
-      background: #fff8e1;
-      margin: 30px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 700px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
+.friend-section li {
+  color: #1976d2;
+  font-size: 26px;
+  background: #e3f2fd;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0,0,255,0.2);
+}
 
-    .song-info {
-      font-size: 20px;
-      color: #6a1b9a;
-      font-style: italic;
-      margin-top: 15px;
-    }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
 
-    footer {
-      background: #fce4ec;
-      padding: 20px;
-      font-size: 16px;
-    }
+.funny {
+  background: #fff8e1;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
 
-    audio, video, iframe {
-      margin-top: 20px;
-      width: 90%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    }
+.song-info {
+  font-size: 20px;
+  color: #6a1b9a;
+  font-style: italic;
+  margin-top: 15px;
+}
 
-    @media (max-width: 600px) {
-      h1 { font-size: 36px; }
-      h2 { font-size: 28px; }
-      p, ul { font-size: 18px; }
-      img.profile { width: 180px; height: 180px; }
-    }
+footer {
+  background: #fce4ec;
+  padding: 20px;
+  font-size: 16px;
+}
+
+audio, iframe {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 28px; }
+  p, ul { font-size: 18px; }
+  img.profile { width: 180px; height: 180px; }
+}
+
   </style>
 </head>
-<body>
-
-  <header>
+<body>  <header>
     <h1>Welcome to My Website 😎</h1>
     <p>I’m <strong>Saroj Kunwar</strong></p>
     <p>Creative, funny, and full of vibes!</p>
     <img src="https://i.ibb.co/TxBG1fG3/retouch-2025052010070404.jpg" alt="Saroj Kunwar" class="profile">
-  </header>
-
-  <div class="social">
-    <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">Facebook 1</a>
-    <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">Facebook 2</a>
-    <a href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yP35ceIT2o&_r=1" target="_blank">TikTok</a>
-  </div>
-
-  <section>
-    <h2>My Best Friends</h2>
-    <ul>
-      <li>Saroj Dhungel</li>
-      <li>Himal Bhatt</li>
-      <li>Biswash Chaudhary</li>
+  </header>  <div class="social">
+    <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">🌐 Facebook 1</a>
+    <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">🌐 Facebook 2</a>
+    <a href="https://www.instagram.com/supikunwar?igsh=dzc1Nnk0NzF6dDAy" target="_blank">📸 Instagram</a>
+    <a href="https://www.tiktok.com/@sarojkunwar18?_t=ZS-8yP35ceIT2o&_r=1" target="_blank">🎵 TikTok</a>
+  </div>  <section>
+    <h2>My Best Friends 🤝</h2>
+    <ul class="friend-section">
+      <li>Saroj Dhungel 💯</li>
+      <li>Himal Bhatt 🧠</li>
+      <li>Biswash Chaudhary 🔥</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>My Love ❤️</h2>
-    <ul>
-      <li>Puspa Bist</li>
+  </section>  <section>
+    <h2>My Girlfriend 💕</h2>
+    <ul class="love-section">
+      <li>Puspa Bist 💖🥰💘🌹🔥😘💍👑🌈</li>
     </ul>
-  </section>
-
-  <section>
+  </section>  <section>
     <h2>Funny Talk 😆</h2>
     <div class="funny">
       Girl: What are you doing?<br>
@@ -162,32 +181,26 @@
       Interviewer: Why do you always say "Yes"?<br>
       Me: Because even Nepali starts with "Yes" 😂
     </div>
-  </section>
-
-  <section>
+  </section>  <section>
     <h2>🎶 Now Playing</h2>
     <audio controls autoplay loop>
       <source src="https://dl.dropboxusercontent.com/scl/fi/f8mm27r2i7i7gl3evh0eg/Saathi-Yama-Buddha.mp3?rlkey=0oz06nljup3kz9f0ctryq59iy&dl=0" type="audio/mp3">
       Your browser does not support audio playback 😢
     </audio>
     <div class="song-info">🎤 Yama Buddha – Saathi</div>
-  </section>
-
-  <section>
-    <h2>🎥 Featured Video</h2>
+  </section>  <section>
+    <h2>🎥 My Video</h2>
+    <p>Add your YouTube or MP4 video link here ⬇️</p>
+    <!-- Replace the video link below with your own -->
     <iframe 
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
       title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen>
     </iframe>
-    <div class="song-info">🔥 Cool YouTube Video</div>
-  </section>
-
-  <footer>
+    <div class="song-info">🎬 Your custom video here</div>
+  </section>  <footer>
     &copy; 2025 Saroj Kunwar. Made with ❤️ in Nepal.
-  </footer>
-
-</body>
+  </footer></body>
 </html>
