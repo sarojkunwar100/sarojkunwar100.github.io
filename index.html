@@ -1,119 +1,162 @@
-<!DOCTYPE html>
-<html lang="ne">
+<!DOCTYPE html><html lang="ne">
 <head>
   <meta charset="UTF-8" />
   <title>My Funny School Friends</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Noto+Sans+JP&display=swap');
-    
-    body {
-      font-family: 'Baloo 2', cursive, 'Noto Sans JP', sans-serif;
-      background: linear-gradient(135deg, #fce4ec, #f3e5f5);
-      color: #4a148c;
-      margin: 0; padding: 0;
-      text-align: center;
-    }
-    header {
-      padding: 40px 20px 10px;
-      background: #ce93d8;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 48px;
-      letter-spacing: 2px;
-      text-shadow: 1px 1px 4px #7b1fa2;
-    }
-    section {
-      max-width: 700px;
-      margin: 40px auto;
-      background: #f8bbd0;
-      border-radius: 15px;
-      padding: 30px 20px;
-      box-shadow: 0 10px 25px rgba(123,31,162,0.3);
-    }
-    section h2 {
-      color: #4a148c;
-      font-size: 36px;
-      margin-bottom: 25px;
-      text-shadow: 1px 1px 3px #ce93d8;
-    }
-    .friend {
-      text-align: left;
-      margin-bottom: 22px;
-      padding: 15px 20px;
-      border-left: 6px solid #7b1fa2;
-      background: #f3e5f5cc;
-      border-radius: 10px;
-      font-size: 20px;
-      box-shadow: 0 3px 10px rgba(123,31,162,0.2);
-    }
-    .friend strong {
-      font-size: 24px;
-      color: #7b1fa2;
-      text-shadow: 0 0 5px #ce93d8;
-    }
-    .emoji {
-      font-size: 28px;
-      margin-left: 8px;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 15px 10px;
-      background: #ce93d8;
-      color: white;
-      font-weight: 600;
-      box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Noto+Sans+JP&display=swap');body {
+  font-family: 'Baloo 2', cursive, 'Noto Sans JP', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+  color: #4a148c;
+  margin: 0; padding: 0;
+  text-align: center;
+}
+header {
+  padding: 40px 20px 10px;
+  background: #ce93d8;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #7b1fa2;
+}
+.tiny-love {
+  font-size: 10px;
+  color: #ffb6c1;
+  font-style: italic;
+  margin-top: -12px;
+  letter-spacing: 1px;
+}
+.tiny-love::after {
+  content: ' 💖';
+}
+.profile {
+  margin: 20px auto 0;
+}
+.profile img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+.social {
+  margin-top: 30px;
+}
+.social a {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 24px;
+  background: #7b1fa2;
+  color: white;
+  border-radius: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.social a:hover {
+  background: #9c27b0;
+  transform: scale(1.05);
+}
+section {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #f8bbd0;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(123,31,162,0.3);
+}
+section h2 {
+  color: #4a148c;
+  font-size: 36px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px #ce93d8;
+}
+.friend {
+  text-align: left;
+  margin-bottom: 22px;
+  padding: 15px 20px;
+  border-left: 6px solid #7b1fa2;
+  background: #f3e5f5cc;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgba(123,31,162,0.2);
+}
+.friend strong {
+  font-size: 24px;
+  color: #7b1fa2;
+  text-shadow: 0 0 5px #ce93d8;
+}
+.emoji {
+  font-size: 28px;
+  margin-left: 8px;
+}
+footer {
+  margin-top: 50px;
+  padding: 15px 10px;
+  background: #ce93d8;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+}
+
   </style>
 </head>
 <body>
   <header>
     <h1>My Funny School Friends 🤣</h1>
-  </header>
-  
-  <section>
-    <h2>Friends Funny Talks</h2>
-    
-    <div class="friend">
-      <strong>Saroj Dhungel</strong> <span class="emoji">🤣</span><br>
-      म धेरै गफी छु, मतलब बोल्नेमा कम छैन। केटीहरूलाई ignore गर्ने कला म सिकेको छु — "बोल्छु भने सुन, नगरेको भए छुट्टै कुरा!"  
+    <div class="tiny-love">my love: Piru 💖</div>
+    <div class="profile">
+      <img src="https://i.ibb.co/Fqf5b068/1753021346036-1.jpg" alt="Saroj">
     </div>
-    
-    <div class="friend">
-      <strong>Himal Bhatt</strong> <span class="emoji">😅</span><br>
-      म केटीलाई हेरिनँ, म आफैँलाई नै हेरिरहेको छु। केटीहरूले मलाई धेरै हेर्छन्, म तिनलाई हेर्दिनँ, नतिजा—म गुमनाम, तर दिमागी हो!  
+    <div class="social">
+      <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">🌐 Facebook 1</a>
+      <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">🌐 Facebook 2</a>
+      <a href="https://www.tiktok.com/@sarojkunwar18" target="_blank">🎵 TikTok</a>
     </div>
-    
-    <div class="friend">
-      <strong>Class Don - Saroj Kunwar</strong> <span class="emoji">😎</span><br>
-      म क्लासको डोन हुँ, गुरुहरूलाई पनि हात हल्लाउने बानी छ। पढाइ त साइडमा राख, साथीहरूसँगै हास्न र रमाउनमा नम्बर वन!  
-    </div>
-    
-    <div class="friend">
-      <strong>Ramesh Dhungel</strong> <span class="emoji">😄</span><br>
-      पढाइ त पन्छियो, म त PT मा धावक। "फुर्सदिलो" भन्ने मलाई माया गर्छन्, तर दौड्दा सधैं भन्छु—"आज asthma आइलाग्यो!"  
-    </div>
-    
-    <div class="friend">
-      <strong>Roshan Babu</strong> <span class="emoji">😆</span><br>
-      म कलाकार, टेस्टको उत्तरभन्दा ड्रोइङमा ध्यान। कक्षा छाड्न म जाँदा पनि, मस्ति गर्दै हाँस्ने!  
-    </div>
-    
-    <div class="friend">
-      <strong>Biswash Chaudhary</strong> <span class="emoji">😂</span><br>
-      म टाइमपासको राजा। पानी पिउँदा पनि हात धुने नाउँमा झुर्किन पुग्छु। कक्षामा नछुट्टिने कुरा मेरो नारा!  
-    </div>
-    
-    <div class="friend">
-      <strong>Parash Kunwar</strong> <span class="emoji">😜</span><br>
-      मेरो दाइ मजाक बनाउने गुरु हो। सूपलाई जुस भन्यो भने सबैलाई हाँसो लाग्छ। घरमा हाँसो र रमाइलोको राजा!  
-    </div>
-  </section>
+  </header>  <section>
+    <h2>Friends Funny Talks</h2><div class="friend">
+  <strong>Saroj Dhungel</strong> <span class="emoji">🤣</span><br>
+  म धेरै गफी छु, मतलब बोल्नेमा कम छैन। केटीहरूलाई ignore गर्ने कला म सिकेको छु — "बोल्छु भने सुन, नगरेको भए छुट्टै कुरा!"
+</div>
 
-  <footer>
+<div class="friend">
+  <strong>Himal Bhatt</strong> <span class="emoji">😅</span><br>
+  म केटीलाई हेरिनँ, म आफैँलाई नै हेरिरहेको छु। केटीहरूले मलाई धेरै हेर्छन्, म तिनलाई हेर्दिनँ, नतिजा—म गुमनाम, तर दिमागी हो!
+</div>
+
+<div class="friend">
+  <strong>Class Don - Saroj Kunwar</strong> <span class="emoji">😎</span><br>
+  म क्लासको डोन हुँ, गुरुहरूलाई पनि हात हल्लाउने बानी छ। पढाइ त साइडमा राख, साथीहरूसँगै हास्न र रमाउनमा नम्बर वन!
+</div>
+
+<div class="friend">
+  <strong>Ramesh Dhungel</strong> <span class="emoji">😄</span><br>
+  पढाइ त पन्छियो, म त PT मा धावक। "फुर्सदिलो" भन्ने मलाई माया गर्छन्, तर दौड्दा सधैं भन्छु—"आज asthma आइलाग्यो!"
+</div>
+
+<div class="friend">
+  <strong>Roshan Babu</strong> <span class="emoji">😆</span><br>
+  म कलाकार, टेस्टको उत्तरभन्दा ड्रोइङमा ध्यान। कक्षा छाड्न म जाँदा पनि, मस्ति गर्दै हाँस्ने!
+</div>
+
+<div class="friend">
+  <strong>Biswash Chaudhary</strong> <span class="emoji">😂</span><br>
+  म टाइमपासको राजा। पानी पिउँदा पनि हात धुने नाउँमा झुर्किन पुग्छु। कक्षामा नछुट्टिने कुरा मेरो नारा!
+</div>
+
+<div class="friend">
+  <strong>Parash Kunwar</strong> <span class="emoji">😜</span><br>
+  मेरो दाइ मजाक बनाउने गुरु हो। सूपलाई जुस भन्यो भने सबैलाई हाँसो लाग्छ। घरमा हाँसो र रमाइलोको राजा!
+</div>
+
+  </section>  <footer>
     © 2025 Made with ❤️ by Saroj Kunwar
   </footer>
 </body>
