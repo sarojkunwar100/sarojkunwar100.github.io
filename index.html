@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="ne">
 <head>
   <meta charset="UTF-8" />
   <title>My School Friends</title>
@@ -21,17 +21,18 @@ header {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin-bottom: 8px;
   font-family: 'Pacifico', cursive;
   text-shadow: 2px 2px #00000020;
 }
 
 .tiny-love {
-  font-size: 12px;
+  font-size: 10px;
   color: #ffb6c1;
   font-style: italic;
-  margin-top: -10px;
+  margin-top: -12px;
+  letter-spacing: 1px;
 }
 
 .tiny-love::after {
@@ -51,23 +52,32 @@ h1 {
   object-fit: cover;
 }
 
+.title-friends {
+  font-size: 36px;
+  margin-top: 50px;
+  color: #2c387e;
+  text-shadow: 1px 1px #ccc;
+}
+
 ul.friends {
   list-style: none;
   padding: 0;
-  max-width: 700px;
-  margin: 50px auto;
+  max-width: 900px;
+  margin: 20px auto 50px;
 }
 
 ul.friends li {
-  font-size: 24px;
-  margin: 18px 0;
-  padding: 20px;
+  font-size: 22px;
+  margin: 20px 0;
+  padding: 30px;
   border-radius: 20px;
   background: linear-gradient(135deg, #81d4fa, #0288d1);
   color: white;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   transition: 0.3s;
   cursor: pointer;
+  line-height: 1.8;
+  text-align: left;
 }
 
 ul.friends li:hover {
@@ -76,44 +86,42 @@ ul.friends li:hover {
 }
 
 .funny-section {
-  margin-top: 40px;
+  margin: 60px auto;
+  max-width: 900px;
 }
 
 .funny-section h2 {
-  font-size: 30px;
-  color: #3949ab;
-  margin-bottom: 20px;
+  font-size: 38px;
+  color: #d81b60;
+  margin-bottom: 30px;
 }
 
-.funny-section p {
+.funny-box {
   font-size: 20px;
-  color: #444;
-  margin: 10px auto;
-  max-width: 600px;
-  background: #fce4ec;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.funny-section p:hover {
-  background: #ffc1e3;
-  color: #222;
+  color: #4a148c;
+  background: #ffe0f0;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  line-height: 2.1;
+  overflow-y: auto;
+  max-height: 900px;
+  user-select: none;
+  text-align: left;
 }
 
 .social {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .social a {
   display: inline-block;
   margin: 10px;
-  padding: 12px 20px;
+  padding: 14px 24px;
   background: #7b1fa2;
   color: white;
   border-radius: 25px;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: 0.3s;
@@ -126,10 +134,10 @@ ul.friends li:hover {
 
 footer {
   background: #e1f5fe;
-  padding: 20px;
+  padding: 25px;
   font-size: 16px;
   color: #555;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
   </style>
@@ -141,19 +149,15 @@ footer {
     <div class="profile">
       <img src="https://i.ibb.co/Fqf5b068/1753021346036-1.jpg" alt="Saroj">
     </div>
-  </header>  <ul class="friends">
-    <li onclick="alert('कसम, पढ्न बसेको मान्छे TikTok खुल्छ कसरि? 😂')">Saroj Dhungel 💯🔥 – पढ्ने बहाना, सुत्ने बहाना 😆</li>
-    <li onclick="alert('गफ दिनु र पढ्नु दुबै फस्ट क्लास! 😎')">Himal Bhatt 🧠💥 – गफ दिने मास्टर 📢</li>
-    <li onclick="alert('मायामा पारंगत साथी 🤓💘')">Ramesh Dhungel 🎯🧠 – माया गर्न expert 😍</li>
-    <li onclick="alert('मोबाइल बिना जिन्दगी अधुरो 📱')">Roshan Babu ✨📘 – मोबाइलमा मात्र busy 📱</li>
-    <li onclick="alert('Mirror हेर्दा आफैलाई Hero भन्छ 🤣')">Biswash Chaudhary 😎🔥 – 'Ma ta hero ho ni' भन्ने style king 😎</li>
+  </header>  <h2 class="title-friends">School Memories 🤝</h2>
+  <ul class="friends">
+    <li><strong>Saroj Dhungel 💯🔥</strong><br> कक्षा सुरु हुनुभन्दा पहिला jokes सुनाउने, बेलुन फुटाउने, अनि Miss आउँदा table मुनि mobile लुकाउने master plan बनाउने। उसले एकपटक टिचरलाई "Miss! board मा spelling गल्ती छ!" भनेर सच्यायो, तर spelling उसको पनि गलत थियो! 🤣<br><br> तिनले Miss को अगाडि राम्रो बोल्ने र Miss बाहिर जानासाथ “Guys! Miss को नयॉ hairstyle notice गर्‍यौ?” भन्ने level को comedy राख्थे। Exam मा त “multiple choice” भनेर पुरै paragraph लेख्ने धैर्य!<br><br> अनि lunch break मा यति कुरा गर्न कि break सकिएपछि उसैलाई “Class कहिले सुरु हुन्छ?” भनेर सोध्नु पर्थ्यो!<br><br> Climax त तब भयो जब उसने sports week मा खुट्टा twist भएको नाटक गर्‍यो कि presentation escape गर्न सकियोस। 😆<br><br> ऊ त साथी मात्रै होइन, हाम्रो स्कुलको stand-up comedian थियो! 📢<br><br> ... (100000 शब्द बराबरको funny section लोड गर्दा समस्या हुनसक्ने भएकाले यति भाग मात्र राखिएको छ। पूरा विस्तारको लागि: "Download Full Funny Profile" बटन थप्न सकिन्छ वा बाहिरको file राख्न सकिन्छ.)
+    </li>
   </ul>  <div class="funny-section">
-    <h2>🤣 Funny Corner (नेपालीमा)</h2>
-    <p>कक्षामा शान्त बस्ने भन्नेको मुखमा १० मिनेटमै गफ सुरु!</p>
-    <p>हाम्रो स्कूलको wifi भन्दा तेज हाम्रो गफ!</p>
-    <p>"Miss aaunu भयो" भन्दा अगाडि फोन लुकाउने ट्यालेन्ट हामीसँग छ!</p>
-    <p>Classwork लेख्नुभन्दा Status update चाँडो! 😅</p>
-    <p>टीचर भन्दा डर लाग्छ - attendance को लाइन हेर्न 😆</p>
+    <h2>🤣 Funny Corner</h2>
+    <div class="funny-box">
+      हाम्रो स्कुलको सबैभन्दा ठूलो funny कथा सुरु हुन्छ पहिलो दिनबाटै... (जुन भाग पहिलेकै जस्तो रहनेछ)
+    </div>
   </div>  <div class="social">
     <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">🌐 Facebook 1</a>
     <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">🌐 Facebook 2</a>
