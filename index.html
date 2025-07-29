@@ -33,6 +33,19 @@ h1 {
   font-style: italic;
 }
 
+.profile {
+  margin: 30px auto 0;
+}
+
+.profile img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
 ul.friends {
   list-style: none;
   padding: 0;
@@ -41,19 +54,40 @@ ul.friends {
 }
 
 ul.friends li {
-  font-size: 28px;
-  margin: 15px 0;
-  padding: 18px 24px;
+  font-size: 24px;
+  margin: 18px 0;
+  padding: 20px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  background: linear-gradient(135deg, #81d4fa, #0288d1);
   color: white;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
 ul.friends li:hover {
-  transform: translateY(-3px);
+  transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.funny-section {
+  margin-top: 40px;
+}
+
+.funny-section h2 {
+  font-size: 30px;
+  color: #3949ab;
+  margin-bottom: 20px;
+}
+
+.funny-section p {
+  font-size: 20px;
+  color: #444;
+  margin: 10px auto;
+  max-width: 600px;
+  background: #fce4ec;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .social {
@@ -91,13 +125,21 @@ footer {
   <header>
     <h1>My School Friends 📚</h1>
     <div class="tiny-love">my love: Piru</div>
+    <div class="profile">
+      <img src="https://i.ibb.co/5WP5C7P8/b9ed6f4743bf05b5d96723ba84ba13e1-0.webp" alt="Saroj">
+    </div>
   </header>  <ul class="friends">
-    <li>Saroj Dhungel 💯🔥</li>
-    <li>Himal Bhatt 🧠💥</li>
-    <li>Ramesh Dhungel 🎯🧠</li>
-    <li>Roshan Babu ✨📘</li>
-    <li>Biswash Chaudhary 😎🔥</li>
-  </ul>  <div class="social">
+    <li>Saroj Dhungel 💯🔥 – पढ्ने बहाना, सुत्ने बहाना 😆</li>
+    <li>Himal Bhatt 🧠💥 – गफ दिने मास्टर 📢</li>
+    <li>Ramesh Dhungel 🎯🧠 – माया गर्न expert 😍</li>
+    <li>Roshan Babu ✨📘 – मोबाइलमा मात्र busy 📱</li>
+    <li>Biswash Chaudhary 😎🔥 – 'Ma ta hero ho ni' भन्ने style king 😎</li>
+  </ul>  <div class="funny-section">
+    <h2>🤣 Funny Corner (नेपालीमा)</h2>
+    <p>कक्षामा शान्त बस्ने भन्नेको मुखमा १० मिनेटमै गफ सुरु!</p>
+    <p>हाम्रो स्कूलको wifi भन्दा तेज हाम्रो गफ!</p>
+    <p>"Miss aaunu भयो" भन्दा अगाडि फोन लुकाउने ट्यालेन्ट हामीसँग छ!</p>
+  </div>  <div class="social">
     <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">🌐 Facebook 1</a>
     <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">🌐 Facebook 2</a>
     <a href="https://www.tiktok.com/@sarojkunwar18" target="_blank">🎵 TikTok</a>
