@@ -1,177 +1,120 @@
-<!DOCTYPE html><html lang="ne">
+<!DOCTYPE html>
+<html lang="ne">
 <head>
   <meta charset="UTF-8" />
-  <title>My School Friends</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Funny School Friends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #fdfbfb, #ebedee);
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #222;
-}
-
-header {
-  padding: 60px 20px 30px;
-  background: linear-gradient(135deg, #64b5f6, #2196f3);
-  color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-h1 {
-  font-size: 52px;
-  margin-bottom: 8px;
-  font-family: 'Pacifico', cursive;
-  text-shadow: 2px 2px #00000020;
-}
-
-.tiny-love {
-  font-size: 10px;
-  color: #ffb6c1;
-  font-style: italic;
-  margin-top: -12px;
-  letter-spacing: 1px;
-}
-
-.tiny-love::after {
-  content: ' 💖';
-}
-
-.profile {
-  margin: 30px auto 0;
-}
-
-.profile img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  object-fit: cover;
-}
-
-.title-friends {
-  font-size: 36px;
-  margin-top: 50px;
-  color: #2c387e;
-  text-shadow: 1px 1px #ccc;
-}
-
-ul.friends {
-  list-style: none;
-  padding: 0;
-  max-width: 900px;
-  margin: 20px auto 50px;
-}
-
-ul.friends li {
-  font-size: 22px;
-  margin: 20px 0;
-  padding: 30px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #81d4fa, #0288d1);
-  color: white;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  cursor: pointer;
-  line-height: 1.8;
-  text-align: left;
-}
-
-ul.friends li:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #29b6f6, #0277bd);
-}
-
-.funny-section {
-  margin: 60px auto;
-  max-width: 900px;
-}
-
-.funny-section h2 {
-  font-size: 38px;
-  color: #d81b60;
-  margin-bottom: 30px;
-}
-
-.funny-box {
-  font-size: 20px;
-  color: #4a148c;
-  background: #ffe0f0;
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  line-height: 2.1;
-  overflow-y: auto;
-  max-height: 900px;
-  user-select: none;
-  text-align: left;
-}
-
-.social {
-  margin-top: 60px;
-}
-
-.social a {
-  display: inline-block;
-  margin: 10px;
-  padding: 14px 24px;
-  background: #7b1fa2;
-  color: white;
-  border-radius: 25px;
-  font-size: 20px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: 0.3s;
-}
-
-.social a:hover {
-  background: #9c27b0;
-  transform: scale(1.05);
-}
-
-footer {
-  background: #e1f5fe;
-  padding: 25px;
-  font-size: 16px;
-  color: #555;
-  margin-top: 60px;
-}
-
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Noto+Sans+JP&display=swap');
+    
+    body {
+      font-family: 'Baloo 2', cursive, 'Noto Sans JP', sans-serif;
+      background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+      color: #4a148c;
+      margin: 0; padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 10px;
+      background: #ce93d8;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 4px #7b1fa2;
+    }
+    section {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #f8bbd0;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 10px 25px rgba(123,31,162,0.3);
+    }
+    section h2 {
+      color: #4a148c;
+      font-size: 36px;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 3px #ce93d8;
+    }
+    .friend {
+      text-align: left;
+      margin-bottom: 22px;
+      padding: 15px 20px;
+      border-left: 6px solid #7b1fa2;
+      background: #f3e5f5cc;
+      border-radius: 10px;
+      font-size: 20px;
+      box-shadow: 0 3px 10px rgba(123,31,162,0.2);
+    }
+    .friend strong {
+      font-size: 24px;
+      color: #7b1fa2;
+      text-shadow: 0 0 5px #ce93d8;
+    }
+    .emoji {
+      font-size: 28px;
+      margin-left: 8px;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 15px 10px;
+      background: #ce93d8;
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>My School Friends 📚</h1>
-    <div class="tiny-love">my love: Piru</div>
-    <div class="profile">
-      <img src="https://i.ibb.co/Fqf5b068/1753021346036-1.jpg" alt="Saroj">
+    <h1>My Funny School Friends 🤣</h1>
+  </header>
+  
+  <section>
+    <h2>Friends Funny Talks</h2>
+    
+    <div class="friend">
+      <strong>Saroj Dhungel</strong> <span class="emoji">🤣</span><br>
+      म धेरै गफी छु, मतलब बोल्नेमा कम छैन। केटीहरूलाई ignore गर्ने कला म सिकेको छु — "बोल्छु भने सुन, नगरेको भए छुट्टै कुरा!"  
     </div>
-  </header>  <h2 class="title-friends">School Memories 🤝</h2>
-  <ul class="friends">
-    <li><strong>Saroj Dhungel 💯🔥</strong><br> क्लासको हिरो, हरेक कुरा मजाकमा बदल्ने कला। एकपटक प्रोजेक्ट वर्कमा ग्लु साटेर टुथपेस्ट ल्यायो, सबैले ब्रश गर्दै प्रजेन्टेसन गरे!</li>
-    <li><strong>Himal Bhatt 🧠💥</strong><br> प्रोजेक्टर मास्टर, प्रोजेक्टर नचल्दा मिस भन्दा फेमस। “सर यो वायर सर्ट छ” भन्दै १५ मिनेट क्लास ढिला गराउँथ्यो।</li>
-    <li><strong>Ramesh Dhungel 🎯🧠</strong><br> पीटी को नाटकबाज! “मिस! आज जोग गरौं, तर १ राउन्ड मात्रै” भन्या मान्छे २० मिनेटको एक्सरसाइजलाई २ मिनेटमा झार्थ्यो।</li>
-    <li><strong>Roshan Babu ✨📘</strong><br> वर्षकै आर्टिस्ट! होमवर्कको किताबमा कार्टून बनाउने, मिसले जाँच्दा “क्रिएटिभ राइटिङ हो!” भन्ने।</li>
-    <li><strong>Biswash Chaudhary 😎🔥</strong><br> टाइम पासको राजा। हरेकपल बाथरुम जान अनुमति लिने, करिडोरमा टुर गाइड जस्तो घुम्ने!</li>
-    <li><strong>Parash Kunwar 😆🕺</strong><br> यो मेरो दाइ, हरेक कुरा फन्नी बनाउने गुरु! “सुत्नुभन्दा पहिला हाँस्नुपर्छ” भन्ने आदर्श बोकेको मान्छे। एकपटक मम्मीले सुप बनाएको बेला “यो त जुस जस्तो छ!” भन्दै कपमा हालेर गेष्टलाई सर्भ गरे 🤣🤣</li>
-  </ul>  <div class="funny-section">
-    <h2>🤣 Funny Corner</h2>
-    <div class="funny-box">
-      विद्यालय जीवनको सुरुवात नै कमेडीबाट भयो। पहिलो दिन स्कुल युनिफर्म ठिकै थियो तर जुत्ता उल्टो। सबैले हाँस्दा म भने आत्मविश्वासका साथ प्रजेन्टेसन दिइरहेको थिएँ।<br><br>
-      स्पोर्ट्स डे मा अब्स्ट्याकल रेसको बेला एक जना साथी केरा छिल्कामा चिप्लिएपछि अर्कोले “यो त म्यारियो गेम हो!” भनेर त्यो सारा इभेन्ट मीम बनाइदियो।<br><br>
-      एकदिन पीटीमा सबैले बोकेको अटेन्डेन्स बुकको साटो एकजना मित्रले टिफिन बक्स देखाए! 🤣<br><br>
-      एकजना त मिसको अगाडि “म बाथरुम जान्छु” भन्दै गयो, क्लासरुममा फर्केर “मिस, ह्यान्ड वास सकिएको छ” भन्दै गुनासो गर्‍यो।<br><br>
-      अब फन्नी कुराहरू यति धेरै छन् कि वेबसाइटमा राख्न ठाउँ पुग्दैन 😆 यदि चाहियो भने पुरा १० लाख शब्दको PDF बनाइदिन्छु!
+    
+    <div class="friend">
+      <strong>Himal Bhatt</strong> <span class="emoji">😅</span><br>
+      म केटीलाई हेरिनँ, म आफैँलाई नै हेरिरहेको छु। केटीहरूले मलाई धेरै हेर्छन्, म तिनलाई हेर्दिनँ, नतिजा—म गुमनाम, तर दिमागी हो!  
     </div>
-  </div>  <div class="social">
-    <a href="https://www.facebook.com/share/16uRPLiF5S/" target="_blank">🌐 Facebook 1</a>
-    <a href="https://www.facebook.com/share/19MYtEe9Lg/" target="_blank">🌐 Facebook 2</a>
-    <a href="https://www.tiktok.com/@sarojkunwar18" target="_blank">🎵 TikTok</a>
-  </div>  <footer>
-    &copy; 2025 My School Friends by Saroj. Designed with ❤️ in Nepal.
+    
+    <div class="friend">
+      <strong>Class Don - Saroj Kunwar</strong> <span class="emoji">😎</span><br>
+      म क्लासको डोन हुँ, गुरुहरूलाई पनि हात हल्लाउने बानी छ। पढाइ त साइडमा राख, साथीहरूसँगै हास्न र रमाउनमा नम्बर वन!  
+    </div>
+    
+    <div class="friend">
+      <strong>Ramesh Dhungel</strong> <span class="emoji">😄</span><br>
+      पढाइ त पन्छियो, म त PT मा धावक। "फुर्सदिलो" भन्ने मलाई माया गर्छन्, तर दौड्दा सधैं भन्छु—"आज asthma आइलाग्यो!"  
+    </div>
+    
+    <div class="friend">
+      <strong>Roshan Babu</strong> <span class="emoji">😆</span><br>
+      म कलाकार, टेस्टको उत्तरभन्दा ड्रोइङमा ध्यान। कक्षा छाड्न म जाँदा पनि, मस्ति गर्दै हाँस्ने!  
+    </div>
+    
+    <div class="friend">
+      <strong>Biswash Chaudhary</strong> <span class="emoji">😂</span><br>
+      म टाइमपासको राजा। पानी पिउँदा पनि हात धुने नाउँमा झुर्किन पुग्छु। कक्षामा नछुट्टिने कुरा मेरो नारा!  
+    </div>
+    
+    <div class="friend">
+      <strong>Parash Kunwar</strong> <span class="emoji">😜</span><br>
+      मेरो दाइ मजाक बनाउने गुरु हो। सूपलाई जुस भन्यो भने सबैलाई हाँसो लाग्छ। घरमा हाँसो र रमाइलोको राजा!  
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Made with ❤️ by Saroj Kunwar
   </footer>
 </body>
 </html>
